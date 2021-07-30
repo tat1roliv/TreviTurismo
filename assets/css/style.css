@@ -1,4 +1,4 @@
-/**/
+/*general*/
 .box-shadow{
     box-shadow:0 2px 4px 0 rgba(0,0,0, 0.1);
     box-shadow:0 4px 8px 0 rgba(0,0,0, 0.05);
@@ -7,4 +7,15 @@
 .fontawsomeIcons {
     font-size: 4rem;
    /* color: #232323;*/
+}
+#home-quote{
+    background: url(../img/quote.jpeg) center center;
+    display: cover;
+}
+
+/*media query*/
+@media (max-width: 767){
+    #home-quote .display-4{
+        font-size: 2.5rem;
+    }
 }
