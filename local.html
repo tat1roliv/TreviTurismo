@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevi Turismo | Local</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--jquery-->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <!--popper-->
+    <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <!--js-->
+    <script src="./assets/js/script.js"></script>
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginLabel">Entre na sua conta: </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group my-2">
+                          <label for="loginEmail">Email</label>
+                          <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group my-2">
+                          <label for="inputPassword">Senha</label>
+                          <input type="password" class="form-control" id="inputPassword" placeholder="Sua senha...">
+                        </div>
+                        <div class="form-group form-check my-2">
+                          <input type="checkbox" class="form-check-input" id="checkCheckbox">
+                          <label class="form-check-label" for="checkCheckbox">Mantenha-me logado.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary my-2 d-md-block">Entrar na conta</button>
+                        <small class="form-text text-muted">Esqueceu a senha? Clique <a href="#" class="link-primary"> aqui</a></small>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--menunav-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light px-3 py-4 box-shadow">
+        <a href="index.html" class="navbar-brand">
+            <img src="./assets/img/logo.png" alt="Logo"  style="max-width:150px;">
+        </a>
+        <!--mobile btn-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--menu nav-->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end"> 
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >Locais</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="local.html">Paris</a></li>
+                      <li><a class="dropdown-item" href="local.html">London</a></li>
+                      <!--<li><hr class="dropdown-divider"></li>-->
+                      <li><a class="dropdown-item" href="local.html">Barcelona</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="planos.html" class="nav-link">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contatos.html" class="nav-link">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <!--menuLogin-Modal-->
+                    <a href="login.html" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+                </li>
+                <li class="nav-item ml-md-2">
+                    <a href="login.html" class="btn btn-outline-primary">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--section1-->
+    <section class="container">     
+            <!--content-header-->
+            <div class="text-center my-5">
+                <span class="h6 d-block text-uppercase">O melhor destino da sua viagem</span>
+                <h1 class="display-4 text-primary">Descubra Barcelona</h1>
+            </div>
+            <!--content-body-->
+            <div class="row">
+                <div class="col-md">
+                    <img src="./assets/img/barcelona2.jpeg"  class="img-fluid mb-4" alt="" > 
+                    <img src="./assets/img/barcelona1.jpeg"  class="img-fluid mb-4" alt="" >                                         
+                    <img src="./assets/img/barcelona9.jpeg"  class="img-fluid mb-4" alt="" >
+                </div>                            
+                <div class="col-md"> 
+                    <img src="./assets/img/barcelona5.jpeg"  class="img-fluid mb-4" alt="" > 
+                    <img src="./assets/img/barcelona8.jpeg"  class="img-fluid mb-4" alt="" >             
+                </div>  
+                <div class="col-md">
+                    <img src="./assets/img/barcelona4.jpg"  class="img-fluid mb-4" alt="" >  
+                    <img src="./assets/img/barcelona7.jpeg"  class="img-fluid mb-4" alt="" >          
+                </div>  
+            </div>      
+    </section>
+    <!--Footer-->
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6 text-uppercase">Páginas</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-decoration-none">Planos</a></li>
+                        <li><a href="" class="text-decoration-none">Contatos</a></li>
+                        <li><a href="" class="text-decoration-none">Inscreva-se</a></li>
+                    </ul>                 
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6 text-uppercase">Cidades</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-decoration-none">Paris</a></li>
+                        <li><a href="" class="text-decoration-none">London</a></li>
+                        <li><a href="" class="text-decoration-none">Barcelona</a></li>
+                    </ul>                 
+                </div>
+                <div class="col-md-4 col-6">
+                    <h4 class="h6 text-uppercase">Dados de contato</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-decoration-none text-secondary">caravan@caravan.com.br</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary">21 99999 99999</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary">Lorem ipsum dolor sit amet</a></li>
+                    </ul>                 
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4 class="h6 text-uppercase">redes Socais</h4>
+                    <ul class="list-unstyled">              
+                        <li><a href="" class="btn btn-outline-secondary mb-2" style="width: 100px;">Facebook</a></li>
+                        <li><a href="" class="btn btn-outline-secondary mb-2" style="width: 100px;">Twitter</a></li>
+                        <li><a href="" class="btn btn-outline-secondary mb-2" style="width: 100px;">Youtube</a></li>
+                    </ul>                 
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0">TreviTurismo Copyright &copy;</p>
+        </div>
+    </footer>
+
+</body>
+</html>
