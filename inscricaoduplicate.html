@@ -106,20 +106,19 @@
                         <div class="col-md-6 form-group">
                             <label for="inputNome" class="form-label pb-0">Nome:</label>
                             <input id="inputNome" type="text" class="form-control" required minlength="2" maxlength="25"
-                                placeholder="Nome completo...">
+                                    placeholder="Nome completo...">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="inputCPF" class="form-label pb-0">CPF: </label>
                             <input id="inputCPF" type="text" class="form-control" required minlength="11" maxlength="14"
-                                placeholder="555.555.555-55">
+                                    placeholder="555.555.555-55">
                         </div>
-                    </div>
+                        </div>
                     <div class="row gx-2 mt-3">
                         <div class="col-md-6 form-group">
                             <label for="inputEmail" class="form-label">E-mail: </label>
                             <input id="inputEmail" type="email" class="form-control" placeholder="name@example.com">
-                            <!--pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"-->
-                        </div>
+                            </div>
                         <div class="col-md-6 form-group">
                             <label for="inputPassword" class="form-label">Senha: </label>
                             <input id="inputPassword" type="password" class="form-control">
@@ -128,45 +127,48 @@
                     <div class="row gx-2 mt-3">
                         <div class="col-12 form-group">
                             <label for="inputEndereco" class="form-label">Endereço: </label>
-                            <input id="inputEndereco" type="text" class="form-control" placeholder="Rua, número">                          
-                        </div>               
+                            <input id="inputEndereco" type="text" class="form-control" placeholder="Rua, número">
+                        </div>
                     </div>
                     <div class="row gx-2 mt-3">
                         <div class="col-md-6 form-group">
                             <label for="inputCidade" class="form-label">Cidade: </label>
-                            <input id="inputCidade" type="text" class="form-control" placeholder="Rua, número.">                          
-                        </div>     
+                            <input id="inputCidade" type="text" class="form-control" placeholder="Rua, número.">
+                        </div>
                         <div class="col-md-3 col-6 form-group">
                             <label for="inputEstado" class="form-label">Estado: </label>
                             <select class="form-select" aria-label="inputEstado">
                                 <option selected>São Paulo</option>
                                 <option value="1">Rio de Janeiro</option>
                                 <option value="2">Minas Gerais</option>
-                              </select>                         
-                        </div>    
+                            </select>
+                        </div>
                         <div class="col-md-3 col-6 form-group">
                             <label for="inputCEP" class="form-label">CEP: </label>
-                            <input id="inputCEP" type="text" class="form-control" placeholder="55555-555">                          
-                        </div>            
+                            <input id="inputCEP" type="text" class="form-control" placeholder="55555-555">
+                        </div>
                     </div>
                     <div class="row bg-light rounded box-shadow p-4 mt-5">
                         <div class="form-group">
                             <h2 class="h6 text-uppercase text-primary ">FORMA DE PAGAMENTO</h2>
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-cartao-tab" data-bs-toggle="tab" data-bs-target="#nav-cartao" type="button" role="tab" aria-controls="nav-cartao" aria-selected="true">Cartão de crédito </button>
-                                    <button class="nav-link" id="nav-boleto-tab" data-bs-toggle="tab" data-bs-target="#nav-boleto" type="button" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto Bancário</button>
+                                    <button class="btn btn-secondary btn-sm active" id="nav-cartao-tab"
+                                            data-bs-toggle="tab" data-bs-target="#nav-cartao" type="button" role="tab"
+                                            aria-controls="nav-cartao" aria-selected="true">Cartão de Crédito</button>
+                                    <button class="btn btn-secondary btn-sm" id="nav-boleto-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-boleto" type="button" role="tab" aria-controls="nav-boleto"
+                                            aria-selected="false">Boleto Bancário</button>
                                 </div>
                             </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
-                                        <!--conteúdo cartão-->
-                                        <form action="" class="">
-                                            <div class="row py-4">
-                                                <div class="col-md-6 form-group">
-                                                    <label for="inputNomeCartao" class="form-label">Nome no Cartão:</label>
-                                                    <input id="inputNomeCartao" type="text" class="form-control" placeholder="Nome impresso no cartão">
-                                                </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel"
+                                        aria-labelledby="nav-cartao-tab">
+                                    <form action="" class="p-4">
+                                        <div class="row gx-2 mt-3">
+                                            <div class="col-md-6 form-group">
+                                                <label for="inputNomeCartao" class="form-label">Nome no Cartão: </label>
+                                                <input id="inputNomeCartao" type="text" class="form-control" placeholder="Nome impresso no cartão">
                                             </div>
                                             <div class="col-md-3 col-6 form-group">
                                                 <label for="inputMesCartao" class="form-label">Mês: </label>
@@ -184,28 +186,53 @@
                                                     <option value="8">11</option>
                                                     <option value="9">12</option>
                                                 </select>
+                                                </div>
+                                            <div class="col-md-3 col-6 form-group">
+                                                <label for="inputAnoCartao" class="form-label">Ano: </label>
+                                                <select class="form-select" aria-label="inputAnoCartao">
+                                                    <option value="1">2021</option>
+                                                    <option value="2">2022</option>
+                                                    <option value="3">2023</option>
+                                                    <option value="4">2024</option>
+                                                    <option value="5">2025</option>
+                                                    <option value="6">2026</option>
+                                                    <option value="7">2027</option>
+                                                    <option value="8">2028</option>
+                                                </select>
                                             </div>
-                                        </form>
-
-
+                                        </div>
+                                        <div class="row gx-2 mt-3">
+                                            <div class="col-md-6 form-group">
+                                                <label for="inputNumeroCartao" class="form-label">Número do Cartão: </label>
+                                                <input id="inputNumeroCartao" type="text" class="form-control" placeholder="5555 5555 5555 5555">
+                                            </div>
+                                            <div class="col-md-6  form-group">
+                                                <label for="inputMesCartao" class="form-label">Código de Segurança: </label>
+                                                <input id="inputCodigoCartao" type="text" class="form-control" placeholder="XXX" style="width: 100px;">
+                                            </div>
+                                            <div class="my-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Concordo com os <a class="text-decoration-none">Termos e Condições</a></label>
+                                            </div>
+                                            <button type="submit" class="btn btn-lg btn-primary w-50">Contratar plano</button>
+                                        
                                     </div>
-                                    <div class="tab-pane fade" id="nav-boleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
-                                        <!--conteúdo p-->
-                                        <p class="py-2">Clique em contratar para receber o boleto por e-mail.</p>
-
+                                    <div class="tab-pane fade" id="nav-boleto" role="tabpanel"
+                                        aria-labelledby="nav-boleto-tab">
+                                        <p class="lead">Clique em <a class="text-decoration-none" href="#">contratar plano </a>que enviaremos um boleto para o seu e-mail.</p>
                                     </div>
                                 </div>
-                        </div> 
+                            </div>
+                        </div>
                     </div>
-                </form>
+                </form>       
             </div>
-            <div class="col-lg-5 p-3">
+            <div class="col-md-5">
                 <div class="card bg-light border-0 p-4 box-shadow">
                     <div class="card-body">
                         <h5 class="card-title">Gold</h5>
-                        <div></div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
