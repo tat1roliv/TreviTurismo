@@ -101,7 +101,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6 pb-5">
-                <form action="" class="bg-light border-0 p-4 box-shadow">
+                <form action="" class="p-4">
                     <div class="row gx-2">
                         <div class="col-md-6 form-group">
                             <label for="inputNome" class="form-label pb-0">Nome:</label>
@@ -128,31 +128,59 @@
                     <div class="row gx-2 mt-3">
                         <div class="col-12 form-group">
                             <label for="inputEndereco" class="form-label">Endereço: </label>
-                            <input id="inputEndereco" type="text" class="form-control" placeholder="Rua, número">                          
-                        </div>               
+                            <input id="inputEndereco" type="text" class="form-control" placeholder="Rua, número">
+                        </div>
                     </div>
                     <div class="row gx-2 mt-3">
                         <div class="col-md-6 form-group">
                             <label for="inputCidade" class="form-label">Cidade: </label>
-                            <input id="inputCidade" type="text" class="form-control" placeholder="Rua, número.">                          
-                        </div>     
+                            <input id="inputCidade" type="text" class="form-control" placeholder="Rua, número.">
+                        </div>
                         <div class="col-md-3 col-6 form-group">
                             <label for="inputEstado" class="form-label">Estado: </label>
                             <select class="form-select" aria-label="inputEstado">
                                 <option selected>São Paulo</option>
                                 <option value="1">Rio de Janeiro</option>
                                 <option value="2">Minas Gerais</option>
-                              </select>                         
-                        </div>    
+                            </select>
+                        </div>
                         <div class="col-md-3 col-6 form-group">
                             <label for="inputCEP" class="form-label">CEP: </label>
-                            <input id="inputCEP" type="text" class="form-control" placeholder="55555-555">                          
-                        </div>            
+                            <input id="inputCEP" type="text" class="form-control" placeholder="55555-555">
+                        </div>
+                    </div>
+                    <div class="row bg-light rounded box-shadow p-4 mt-5">
+                        <div class="form-group">
+                            <h2 class="h6 text-uppercase text-primary ">FORMA DE PAGAMENTO</h2>
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="btn btn-secondary btn-sm active" id="nav-cartao-tab"
+                                        data-bs-toggle="tab" data-bs-target="#nav-cartao" type="button" role="tab"
+                                        aria-controls="nav-cartao" aria-selected="true">Cartão de Crédito</button>
+                                    <button class="btn btn-secondary btn-sm" id="nav-boleto-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-boleto" type="button" role="tab" aria-controls="nav-boleto"
+                                        aria-selected="false">Boleto Bancário</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-cartao-tab">
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-boleto-tab">...</div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-5">
-
+            <div class="col-lg-5 p-3">
+                <div class="card bg-light border-0 p-4 box-shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Gold</h5>
+                        <div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
